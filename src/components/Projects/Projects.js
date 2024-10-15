@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import BuzzPulse from "../../Assets/Projects/BuzzPulse.jpg";
+import feedback from "../../Assets/Projects/feedback.png";
 import Eventhub from "../../Assets/Projects/Eventhub.png";
 import Jobify from "../../Assets/Projects/JOB FINDER.jpg";
 import notify from "../../Assets/Projects/Notify.png";
@@ -25,54 +25,11 @@ function Projects() {
             <ProjectCard
               imgPath={notify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Tunesen}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Jobify}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={BuzzPulse}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={segregator}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Notify"
+              description=
+              "The Note-Taking App is a web-based solution designed for users to create, manage, and organize notes efficiently. It features a custom-built rich text editor, note management capabilities, and an AI-powered glossary highlighting feature. This application is ideal for students, professionals, and anyone in need of a reliable note-taking system"
+              ghLink="https://github.com/ShrestyB/notes"
+              //demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
@@ -80,13 +37,65 @@ function Projects() {
             <ProjectCard
               imgPath={Eventhub}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Event Hub"
+              description=
+              "Built a a full-stack Event Management platform;Integrated user authentication and registration functionalities into the platform; promoting a secure environment. A seamless and engaging platform for organizing and participating in events, enhancing user experience and community engagemen"
+              ghLink="https://github.com/ShrestyB/Event-Hub"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Jobify}
+              isBlog={false}
+              title="Job Finder"
+              description=
+              "Job Finder streamlines your job search. Simply search, apply, and manage applications effortlessly. Create a profile, upload your resume for personalized job suggestions, and save your preferred jobs. It's the easiest way to find and apply for jobs tailored to you."
+              ghLink="https://github.com/ShrestyB/Jobify"
+              //demoLink="https://editor.soumya-jit.tech/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Tunesen}
+              isBlog={false}
+              title="Tunesen"
+              description=
+              "Implemented a novel AI-driven system for music generation, utilizing deep learning techniques and neural network architectures up to accuracy of 84%               Developing and training models on large-scale datasets of musical compositions across various genres,incorporating both symbolic and audio representations of music."
+              ghLink="https://github.com/ShrestyB/Tunesen"
+              //demoLink="https://blogs.soumya-jit.tech/"
+            />
+          </Col>
+
+         
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={feedback}
+              isBlog={false}
+              title="Police Station Feedback"
+              description=
+              "Designed and developed a comprehensive dashboard using to display feedback received by police stations across various cities in Gujarat."
+               ghLink="https://github.com/ShrestyB/Police-Station-Dashboard"
+              //demoLink="https://plant49-ai.herokuapp.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={segregator}
+              isBlog={false}
+              title="Data Segregation"
+              description=
+              "Trained a model to distinguish between the organic and inorganic waste up to accuracy up to 93%"
+              ghLink="https://github.com/ShrestyB/Data-Segregation"
+              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+            />
+          </Col>
+
+          
         </Row>
       </Container>
     </Container>
